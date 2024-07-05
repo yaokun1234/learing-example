@@ -1,0 +1,17 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: transaction # ????
+  datasource:
+    url: jdbc:mysql:106.14.174.139:8210/hm-item?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: yk123456
+mybatis-plus:
+  configuration:
+    default-enum-type-handler: com.baomidou.mybatisplus.core.handlers.MybatisEnumTypeHandler
+  global-config:
+    db-config:
+      update-strategy: not_null
+      id-type: auto
